@@ -39,14 +39,16 @@
             <p class="error">This web app requires JavaScript to work.</p>
         </noscript>
             
-        <input class="counter__value" data-key="number" readonly 
-            value="0"/>
+        <sl-input class="counter__value" data-key="number" readonly value="0"></sl-input>
+    
+        <div class="counter__actions">
+            <!-- Use Shoelace Button components for Add and Subtract buttons -->
+            <sl-button data-key="subtract" class="counter__button counter__button_first" @click="subtractHandler()">-</sl-button>
+            <sl-button data-key="add" class="counter__button" @click="addHandler()">+</sl-button>
             
-            <div class="counter__actions">
-                <button data-key="subtract" class="counter__button
-                counter__button_first">-</button>
-                <button data-key="add" class="counter__button">+</button>
-            </div>
+            <!-- Add a Reset button and confirmation message element -->
+            <sl-button data-key="reset" @click="resetCounter">Reset</sl-button>
+            <p id="confirmation-message" style="display: none;">Counter has been reset</p>
         </main>
         
         <footer class="footer">
