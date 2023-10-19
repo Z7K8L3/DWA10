@@ -65,6 +65,13 @@ body {
     display: flex;
 }
 
+.reset__button {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 .counter__button {
     background: none;
     width: 50%;

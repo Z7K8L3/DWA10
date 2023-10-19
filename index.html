@@ -45,9 +45,10 @@
             <!-- Use Shoelace Button components for Add and Subtract buttons -->
             <sl-button data-key="subtract" class="counter__button counter__button_first" @click="subtractHandler()">-</sl-button>
             <sl-button data-key="add" class="counter__button" @click="addHandler()">+</sl-button>
+        </div>
             
             <!-- Add a Reset button and confirmation message element -->
-            <sl-button data-key="reset" @click="resetCounter">Reset</sl-button>
+            <sl-button data-key="reset" class="reset__button" @click="resetCounter">Reset</sl-button>
             <p id="confirmation-message" style="display: none;">Counter has been reset</p>
         </main>
         
