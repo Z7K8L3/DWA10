@@ -8,6 +8,10 @@ const add = document.querySelector('[data-key="add"]');
 const resetButton = document.querySelector('[data-key="reset"]');
 const confirmationMessage = document.getElementById('confirmation-message');
 
+// confirmationMessage.type = 'success';
+confirmationMessage.style.display = 'none';
+// confirmationMessage.innerText = 'Counter has been reset.';
+// document.body.appendChild(confirmationMessage);
 
 const subtractHandler = () => {
   const newValue = parseInt(number.value) - STEP_AMOUNT;
